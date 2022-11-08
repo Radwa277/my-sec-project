@@ -1,10 +1,21 @@
 on:
   push:
     branches:
-      - master 
+      - master  
 
 
 
 
 
 jobs: 
+  build:
+    run-on: ubunto-latest 
+
+
+    steps:
+      - name: 'testing github action'
+        run: pwd
+
+      - name: 'testing printing'
+        run: echo Ahmed  
+      
